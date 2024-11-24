@@ -2,6 +2,7 @@
 
 namespace Addressable\Bundle\Tests\Unit\Form\Type;
 
+use PHPUnit\Framework\TestCase;
 use Addressable\Bundle\Validator\Constraints\Latitude;
 use Addressable\Bundle\Validator\Constraints\LatitudeValidator;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
@@ -9,7 +10,7 @@ use Symfony\Component\Validator\Context\ExecutionContextInterface;
 /**
  * Ensures correct behaviour of LatitudeValidator
  */
-class LatitudeValidatorTest extends \PHPUnit_Framework_TestCase
+class LatitudeValidatorTest extends TestCase
 {
     /**
      * Test submitting valid data

@@ -2,6 +2,7 @@
 
 namespace Addressable\Bundle\Model\Traits\ORM;
 
+use Addressable\Bundle\Model\AddressableInterface;
 use Addressable\Bundle\Entity\Address;
 
 /**
@@ -33,7 +34,7 @@ class RelatedAddressableTrait
      *
      * @param Address $address
      *
-     * @return \Addressable\Bundle\Model\AddressableInterface
+     * @return AddressableInterface
      */
     public function setAddress(Address $address)
     {

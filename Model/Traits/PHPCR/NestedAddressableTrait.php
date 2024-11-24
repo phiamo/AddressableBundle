@@ -2,6 +2,7 @@
 
 namespace Addressable\Bundle\Model\Traits\PHPCR;
 
+use Addressable\Bundle\Model\AddressableInterface;
 use Addressable\Bundle\Document\Address;
 
 /**
@@ -33,7 +34,7 @@ class NestedAddressableTrait
      *
      * @param Address $address
      *
-     * @return \Addressable\Bundle\Model\AddressableInterface
+     * @return AddressableInterface
      */
     public function setAddress(Address $address)
     {

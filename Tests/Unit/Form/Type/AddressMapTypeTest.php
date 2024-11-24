@@ -40,7 +40,7 @@ class AddressMapTypeTest extends TypeTestCase
      *
      * @return array
      */
-    public function getValidTestData()
+    public static function getValidTestData()
     {
         return array(
             array(

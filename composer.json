@@ -15,12 +15,15 @@
         "symfony/dependency-injection": "@stable",
         "symfony/config": "@stable",
         "symfony/validator": "@stable",
-        "symfony/options-resolver": "@stable"
+        "symfony/options-resolver": "@stable",
+        "doctrine/orm": "^2"
     },
     "autoload": {
         "psr-4": { 
-            "Addressable\\Bundle\\": "",
-            "Daa\\Addressable\\Bundle\\": ""
+            "Addressable\\Bundle\\": ""
         }
+    },
+    "require-dev": {
+        "rector/rector": "^1.2"
     }
 }

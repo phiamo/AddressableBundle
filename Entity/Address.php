@@ -4,9 +4,7 @@ namespace Addressable\Bundle\Entity;
 
 use Addressable\Bundle\Model\AddressableInterface;
 use Addressable\Bundle\Model\Traits\ORM\AddressableTrait;
-use Addressable\Bundle\Validator\Constraints as AddressValidator;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Entity representing an address.
@@ -23,11 +21,11 @@ class Address implements AddressableInterface
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
+    #[ORM\Column(type: 'integer')]
+    #[ORM\Id]
+    #[ORM\GeneratedValue(strategy: 'AUTO')]
     private $id;
 
-    /**
-     * {@inheritdoc}
-     */
     public function __toString()
     {
         $address = sprintf(

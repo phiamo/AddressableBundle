@@ -31,11 +31,7 @@ class GeospatialHelper
         }
 
         usort($pointsAndDistances, function ($a, $b) {
-            if ($a['distance'] == $b['distance']) {
-                return 0;
-            }
-
-            return $a['distance'] < $b['distance'] ? -1 : 1;
+            return $a['distance'] <=> $b['distance'];
         });
 
         return array_map(function ($element) {

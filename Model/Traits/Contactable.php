@@ -2,7 +2,7 @@
 
 namespace Addressable\Bundle\Model\Traits;
 
-use Doctrine\ORM\Mapping as ORM;
+use Addressable\Bundle\Model\ContactableInterface;
 
 /**
  * Trait for implementing contactable getters and setters
@@ -95,7 +95,7 @@ trait Contactable
      *
      * @param array $details
      *
-     * @return \Addressable\Bundle\Model\ContactableInterface
+     * @return ContactableInterface
      */
     public function setContactDetails(array $details)
     {

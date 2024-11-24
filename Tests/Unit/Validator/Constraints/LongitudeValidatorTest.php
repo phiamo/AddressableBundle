@@ -2,13 +2,14 @@
 
 namespace Addressable\Bundle\Tests\Unit\Form\Type;
 
+use PHPUnit\Framework\TestCase;
 use Addressable\Bundle\Validator\Constraints\Longitude;
 use Addressable\Bundle\Validator\Constraints\LongitudeValidator;
 
 /**
  * Ensures correct behaviour of LongitudeValidator
  */
-class LongitudeValidatorTest extends \PHPUnit_Framework_TestCase
+class LongitudeValidatorTest extends TestCase
 {
     /**
      * Test submitting valid data

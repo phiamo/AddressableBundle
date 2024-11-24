@@ -2,10 +2,12 @@
 
 namespace Osl\Bundle\Common\Tests\Unit\Services;
 
+use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\MockObject\MockObject;
 use Addressable\Bundle\Model\GeoPointInterface;
 use Addressable\Bundle\Services\GeospatialHelper;
 
-class GeospatialHelperTest extends \PHPUnit_Framework_TestCase
+class GeospatialHelperTest extends TestCase
 {
     /**
      * Test sorting point by distance to a point
@@ -113,11 +115,11 @@ class GeospatialHelperTest extends \PHPUnit_Framework_TestCase
      * @param float $lat
      * @param float $lon
      *
-     * @return \PHPUnit_Framework_MockObject_MockObject|GeoPointInterface
+     * @return MockObject|GeoPointInterface
      */
     private function createAddressable($lat, $lon)
     {
-        $addressable = $this->getMock(GeoPointInterface::class);
+        $addressable = $this->createMock(GeoPointInterface::class);
         $addressable->expects($this->atLeastOnce())
             ->method('getLatitude')
             ->will($this->returnValue($lat));

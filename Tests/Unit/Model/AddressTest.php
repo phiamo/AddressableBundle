@@ -2,9 +2,10 @@
 
 namespace Osl\Bundle\Common\Tests\Unit\Model;
 
+use PHPUnit\Framework\TestCase;
 use Addressable\Bundle\Entity\Address;
 
-class AddressTest extends \PHPUnit_Framework_TestCase
+class AddressTest extends TestCase
 {
     public function testAddressCreation()
     {

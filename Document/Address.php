@@ -2,11 +2,8 @@
 
 namespace Addressable\Bundle\Document;
 
-use Addressable\Bundle\Model\AddressableInterface;
 use Addressable\Bundle\Model\Traits\PHPCR\AddressableTrait;
-use Addressable\Bundle\Validator\Constraints as AddressValidator;
 use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
-use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Document representing an address.
