@@ -9,14 +9,14 @@
         }
     ],
     "require": {
-        "php": ">=7.2 || >=8.0",
+        "php": ">=8.0",
         "symfony/form": "@stable",
         "symfony/http-kernel": "@stable",
         "symfony/dependency-injection": "@stable",
         "symfony/config": "@stable",
         "symfony/validator": "@stable",
         "symfony/options-resolver": "@stable",
-        "doctrine/orm": "^2"
+        "doctrine/orm": "^2 || ^3"
     },
     "autoload": {
         "psr-4": { 
