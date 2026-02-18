@@ -14,12 +14,12 @@ class LongitudeValidator extends ConstraintValidator
     /**
      * {@inheritdoc}
      */
-    public function validate($value, Constraint $constraint)
+    public function validate($value, Constraint $constraint): void
     {
         $valid = true;
 
         if ($value === null) {
-            return $valid;
+            return;
         }
 
         // ensure its the right format
